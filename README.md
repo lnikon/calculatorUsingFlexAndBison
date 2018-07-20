@@ -13,14 +13,28 @@ git clone https://github.com/lnikon/calculatorUsingFlexAndBison.git calc/
 cd calc
 ```
 Then, create the parser
-```bison -d calc.y```
+
+```
+bison -d calc.y
+```
 
 after, create the lexer
-```flex calc.l```
+
+```
+flex calc.l
+```
+
 and after all that, create our *calculator* :)
-```gcc calc.tab.c lex.yy.c -o obs```
+
+```
+gcc calc.tab.c lex.yy.c -o obs
+```
+
 and run
-```./obs```
+
+```
+./obs
+```
 
 *THANKS!*
 
